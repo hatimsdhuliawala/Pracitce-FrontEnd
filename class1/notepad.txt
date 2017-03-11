@@ -1,0 +1,58 @@
+JavaScript 
+
+Scripting language.
+
+C programming language ? ()
+	main.c -(compile)-> assembly code and execute  
+
+Interpreted language--> line by line it executed (no compliation is required)
+
+C programming languge 
+
+data Types : 
+		-- int
+		-- float
+		-- double
+		-- short
+		-- long
+
+		-- char
+		-- byte
+		-- bool
+		-- array
+
+
+javaScript
+		-- undefined 
+		-- number
+		-- string
+		-- boolean
+		-- object
+			-- null
+			-- array
+		-- function
+
+C programming ? 
+
+how do you define an integer? 
+
+int a = 0; // we have restricted this to have only int
+ a ="hi every one?"; // this is an error
+
+in java script 
+
+var a = 0; // this is how we define in java script
+
+a = "hi every one?" // this is not an error. 
+
+
+homework 
+
+Subject : UIClass May 15 Home Work 11 <name>
+
+1) look into all the data types. will ask you all the differnt data types and why we use them?
+2) what is script tag?
+3) internal and external java script
+4) why to use javascript
+5) good practices in javascript
+

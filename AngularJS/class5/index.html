@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body ng-app="myApp">
+		<div ng-controller="FirstCtrl">
+			<dir1>Hi every one</dir1>
+			<dir1></dir1>
+			<div dir1> How are you</div>
+			<div class="dir1"> doing?</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		<script type="text/javascript">
+			angular.module('myApp', []);
+			angular.module('myApp').controller('FirstCtrl', ['$scope', function($scope){
+				
+			}]); 
+			angular.module('myApp').directive('dir1', function() {
+				return {
+					restrict : 'EAC', 
+					transclude : true,
+					template : '<div>This is my first custom directive <ng-transclude></ng-transclude></div>'
+				}
+			})
+		</script>
+	</body>
+</html>

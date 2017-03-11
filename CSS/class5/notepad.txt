@@ -1,0 +1,13 @@
+Media queries 
+
+break points ? -- observe the size in the screen width using media queries?
+
+@media screen and (min-width: 500px) and (max-width:1000px)
+
+max-width --> the maximum breakpoints
+
+
+min-- max --> with in the range the css would be true.
+
+
+Media queries -- we have conditional css which will applied depending upon the screej width we have 

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<div ng-app="myApp">
+			<div ng-controller="FirstCtrl">
+				<input type="" name="" ng-model="model1">
+				<div ng-repeat="item in arr | filter: model1">{{$index+1}}. {{item |lowercase}}</div>
+
+				currency filter :  {{3 |currency : $ : 3}}
+			</div>
+			The Entered input is : <input type="" name="" ng-model="model2"> <br/>
+			reversed output is :  {{model2 | reverse}}
+			<div ng-controller="SecondCtrl">
+				<select ng-model="selectedColor" ng-options="item.color for item in arr2">
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		<script type="text/javascript">
+			angular.module('myApp', []);
+			angular.module('myApp').controller('FirstCtrl', ['$scope', function($scope){
+				$scope.arr = ["Mango", "Pineapple", "Orange", "Strawberry", "Grape"];
+
+			}])
+			angular.module('myApp').controller('SecondCtrl', function($scope, $rootScope){
+				$scope.arr2= [
+				{
+					color : "pink",
+					name: 'some name'
+				},
+				{
+					color : "orange"
+				},
+				{
+					color : "red"
+				},
+				{
+					color : "yellow"
+				}
+				]
+			})
+
+			angular.module('myApp').filter('reverse', function(){
+				return function(data) {
+					data = data || '';
+					var result = '';
+					for(var i=0; i<data.length; i++) {
+						result += data.charAt(data.length -i -1);
+					}
+					return result;
+				}
+			});
+		</script>
+	</body>
+</html>

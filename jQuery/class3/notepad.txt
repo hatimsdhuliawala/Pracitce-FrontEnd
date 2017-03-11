@@ -1,0 +1,30 @@
+jQuery('Selector1Selector2') -- Both Selector1 and Selector2 has to be satisfied on same element
+
+
+:first-child
+:first-of-type
+
+:nth-child(n)
+:nth-of-type(n)
+
+
+:last-child
+:
+
+
+homework 
+Subject : UIClass May 15 Home Work 24 <name>
+
+1) write a program to use jquery method .addClass
+2) write a program to use jquery method .removeClass
+3) write a program to use jquery method .toggleClass
+4) write a program to use jquery method .fadeIn
+5) write a program to use jquery method .fadeOut
+6) write a program to use jquery method .hide
+7) write a program to use jquery method .show
+8) write a program to use jquery method .toggle
+9) write a program to use jquery method .bind
+10) write a program to use jquery method .on
+11) differences between bind and on when to use it
+12) compare differences between addeventlistener in javascript and .bind in jQuery
+13) what is event delegation with respect to on method in jQuery.

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body ng-app="myApp">
+		<div ng-controller="FirstCtrl">
+			<dir1></dir1>
+			<dir1></dir1>
+			<dir1></dir1>
+			<dir1></dir1>
+			<dir1></dir1>
+			with in the controller : {{firstName}}
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		<script type="text/javascript">
+			angular.module('myApp', []); 
+			angular.module('myApp').controller('FirstCtrl', ['$scope', function($scope){
+				
+			}]);
+			angular.module("myApp").directive('dir1', function() {
+				return {
+					restrict : 'E', 
+					template : '<div><input ng-model="firstName">{{firstName}}</div>', 
+					scope : {}
+				}
+			})
+		</script>
+	</body>
+</html>

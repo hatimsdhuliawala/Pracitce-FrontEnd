@@ -1,0 +1,48 @@
+function func1() {
+
+};
+var a = new func1(); // new func1() --> constructor
+
+using a constructor we can create a new object
+
+function func1() {
+
+};
+var a = new func1(); // new func1() --> constructor
+var b = {};
+console.log(typeof a);
+console.log(a instanceof func1);
+
+
+using function and new keyword we can create an object
+
+
+
+using this keyword we can create intiatialized objects using new keyword
+
+function Person(na, ag) {
+	this.name = na;
+	this.age = ag;
+};
+var p1 = new Person('person 1', 43);
+console.log(p1); // {name: 'person1', age:43};
+
+
+if you specify 
+this.propetyName = 'value'
+
+
+{
+	propetyName : 'value'
+}
+
+homework 
+
+Subject : UIClass May 15 Home Work 17 <name>
+
+1) creating objects using new keyword
+2) creating objects using Object.create() --> https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create
+3) creating properties using Object.defineProperty --> https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty
+4) making a property options -- configurable, enumerable, writable, value, get, set
+5) constructor
+6) use of this keyword

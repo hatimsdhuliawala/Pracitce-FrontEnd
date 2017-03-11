@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Java Script intro</title>
+	</head>
+	<body>
+
+		<script type="text/javascript">
+			console.log('printed in console');
+			document.write('writing in the document');
+			//alert('some alert text');
+			var a;
+			console.log(typeof a); // undefined
+			a =10.01;
+			console.log(typeof a); // number
+			a ='some str';
+			console.log(typeof a); // string
+			a = false;
+			console.log(typeof a); // boolean
+			a = {};
+			console.log(typeof a); // object
+			a = null;
+			console.log(typeof a); // object (sub-type) 
+			a = [];
+			console.log(typeof a); // object (sub-type); // Array.isArray(arr)
+			a = function() {};
+			console.log(typeof a); // function
+		</script>
+	</body>
+</html>

@@ -1,0 +1,69 @@
+bind -- we can attach events to dom nodes we have selected
+$('p').bind('click', function(event){
+	console.log(event.target.innerHTML)
+})
+
+to all the paragraphs --> we are attaching a click event. when clicked on para stmts wil be executed.
+
+
+	--> it only works for current elements
+	--> you have added an element in the future (after bind method ran) event handler will not be applied to that.
+
+on event handler
+
+$('body').on('click', 'p', function(event){
+	console.log(event.target.innerHTML)
+});
+
+
+	-- it apply to current and future elements
+	-- event handler will be applied to future elements as well.
+
+
+off
+unbind
+
+
+AJAX -- Aynchrnous Java Script and XML
+
+On the server side 
+
+we have webservices (REST)
+
+REST API
+REST Web services
+Web services 
+
+Using AJAX we can make a call to REST Web service and get information and show it on the server.
+
+
+Client -- AJAX
+Server -- REST 
+
+
+Server (REST) -- listenes to the request and respond
+
+client (AJAX) -- will send the request, waits for the response and process the response.
+
+You need URL to make a AJAX call.
+
+HTTP methods 
+
+GET -- retrieve information
+
+POST -- create new records
+
+PUT -- update the records
+
+DELETE -- remove records
+
+
+homework 
+Subject : UIClass May 15 Home Work 25 <name>
+
+1) write a program to implement GET, POST, PUT, DELETE methods in ajax using the url
+	http://rest.learncode.academy/api/johnbob/friends
+
+2) use $.ajax and $.setup look into it. also look into $.get, $.post, $.put, $.delete
+
+3) Implement success error and complete call back methods

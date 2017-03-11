@@ -1,0 +1,46 @@
+Intall ruby 
+
+open ruby command prompt
+
+gem install compass
+gem install sass
+
+Create a folder and create a file with name styles.scss
+
+sass 
+	-- cannot be understood by the browser
+	-- sass code has to be convereted to css code for browser to understand
+
+How can we convert sass code into css code?
+
+sass --watch inputFileName:OutputFileName
+
+sass --watch styles.scss:styles.css 
+
+a new file will be created with name styles.css
+
+--watch will look for changes in the file of scss and converts every time to css files. 
+
+css preprocessors 
+
+LESS, SASS, Stylus
+
+they have to be converted from sass to css
+
+why to use SASS?
+	--> Maintainability
+	--> reusability
+	--> better understanding of code
+
+Variables : 
+	we can define a varaible with $variableName : value;
+
+homework
+
+Subject : UIClass May 15 Home Work 10 <name>
+
+1) why to use a preprocessor? 
+2) what are disavdantage of using a preprocessor
+3) what is maintability, resability?
+4) variables, mixins, inheritance, nesting, import and partials, operators
+5) look into and understand and describe the onces with example? sass-lang.com/guide

@@ -1,0 +1,18 @@
+table -- table can be used to create a new table 
+tr -- to create a row in a table
+td -- to create a new column in a row
+th -- to create a new column heading 
+
+thead -- to say which part of table is heading 
+tbody -- to say which part of table is body portion
+
+
+homework
+
+Subject : UIClass May 15 Home Work 2 <name>
+
+1) implement Forms and understand most of the attributes you use with forms? when to use ? when not use? examples
+		http://www.w3schools.com/html/html_form_attributes.asp
+2) semantic elements and non sematic elements and why do we need use them? examples of each sematic tag? 
+3) all html elements and attributes  http://www.w3schools.com/tags/default.asp
+4) regular expression? 

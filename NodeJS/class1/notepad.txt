@@ -1,0 +1,48 @@
+node.js is a middleware or server side technology.
+
+You can create REST web services using Node.JS
+
+you create server side web pages as well. 
+
+you can create a server using node.js
+
+
+npm -- node package manager -- lot of libraries
+
+suppose if you want to install a module from npm 
+
+
+npm install moduleName 
+
+it tries create a folder name node_modules --> express
+
+suppose if you have to download 50 libraries
+
+using npm init and enter --> package.json
+
+
+npm install --> all the modules which are in the package.json would be downloaded
+
+
+npm install -g moduleName  --> global installation --> through entire computer
+
+npm install moduleName --> its only available in this folder
+
+
+
+homework 
+Subject : UIClass May 15 Home Work 33 <name>
+
+npm install 
+npm install moduleName
+npm install --save moduleName
+npm install --save-dev moduleName
+
+npm install -g moduleName 
+
+package.json
+
+dependencies
+dev-dependencies
+
+why do you need package.json?

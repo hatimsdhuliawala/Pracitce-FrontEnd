@@ -1,0 +1,88 @@
+Angular
+
+
+Step 1 : Downloading and including angular JS 
+
+	CDN 
+
+Step 2 : ng-app attribute
+
+MV
+
+M - model -- hold the data
+V - View -- representing the model on the html
+
+<input ng-model="firstName">
+
+here input is in view 
+
+any thing you change as a part of view will be updated in the model
+
+ng-model
+
+All the changes done in the <input ng-model="firstName"> are observed and updated in the model with name "firstName"
+
+ng-bind 
+
+Any changes in the model will be observed and updated as a part of the html
+
+ 
+ng-model 
+view --> model
+
+ng-bind
+model --> view
+
+
+Two Data binding
+
+view <--> model
+
+there would a continous synchronization of data in between view and model
+
+place to get more detailed info
+https://docs.angularjs.org/guide/databinding
+
+MVVM -- model view Viewmodel
+
+view model --> synchrnoized the data in between model and view.
+
+
+ng-app -- only this element will be considered as an angular application
+
+if ng-app="someName"
+
+The appliction name has to be registered
+
+angular.module('myApp',[]);
+
+instead of ng-bind we can use {{modelName}}
+
+
+MVC 
+
+Controller --
+	--> We can create a child scope using a controller
+		any model you define in controller is only valid in that controller --> not anywhere outside
+	--> actions can be defined as a part of controller
+	
+
+
+
+
+
+homework 
+Subject : UIClass May 15 Home Work 27 <name>
+
+1) MVC
+2) Model ? --> hold to data
+3) View ? --> show in data in a particular format
+4) Controller ? --> 
+5) Also look into MVVM ? model view viewmodel?
+6) Differences between MVVM and MVC?
+7) What is databinding?
+
+
+grunt --> tasks --> minification
+
+dist --> moved onto a server 

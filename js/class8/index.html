@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var obj = {
+				name: 'js', 
+				getName : function(){
+					console.log(this);// this
+					return this.name; // this?
+				}
+			}
+			obj.getName(); // using obj i called getName method
+			// what would be the value of this get name function() --? 
+			var newValue = obj.getName;
+			window.newValue(); // what would the value of this now?
+			window.newValue(); // what would the value of this now?
+			function func1() {
+				console.log(this); // this will refer to current object you are calling it from?
+			}
+			var obj2 = {
+				abc : func1
+			}
+		</script>
+	</body>
+</html>

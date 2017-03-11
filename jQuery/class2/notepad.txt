@@ -1,0 +1,30 @@
+Basic filters
+
+:eq -- for indexing
+jQuery(':eq(0)') -- zero'th index item
+jQuery(':eq(4)') -- 4th index item
+
+
+:lt(3) -- index value of 0,1,2
+
+
+
+:gt(3) -- index value -- 4,5, ...
+
+
+
+focus -- when you enter through mouse of keyboard on an element --- the it woild be focused
+
+target -- in the url after #someInfo
+
+it looks for the element which has the #someInfo will be selected
+
+https://api.jquery.com/category/selectors/basic-filter-selectors/
+https://api.jquery.com/category/selectors/hierarchy-selectors/
+
+homework 
+Subject : UIClass May 15 Home Work 23 <name>
+
+1) https://api.jquery.com/category/selectors/child-filter-selectors/
+2) https://api.jquery.com/category/selectors/content-filter-selector/
+3) https://api.jquery.com/category/selectors/form-selectors/

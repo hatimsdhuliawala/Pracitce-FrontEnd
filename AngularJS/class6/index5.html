@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body ng-app="myApp">
+		<div ng-controller="FirstCtrl">
+			<div enter attr1="some info in attr1">some content</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		<script type="text/javascript">
+			angular.module('myApp', []); 
+			angular.module('myApp').controller('FirstCtrl', ['$scope', function($scope){
+				$scope.eat = function() {
+					alert('im eating')
+				}
+				$scope.sleep = function() {
+					alert('im sleeping')
+				}
+				$scope.run = function() {
+					alert('im running')
+				}
+			}]);
+			angular.module("myApp").directive('enter', function() {
+				return {
+					restrict : 'A', 
+					scope : {}, 
+					link : function(scope, element, attrs) {
+						// using scope you can also access methods or model in the parent scope --> controller
+						//console.log(attrs.attr1);
+						element.bind('mouseover', function() { // event handler operation can be done using link --> element
+							//console.log('you have entered');
+							scope.$parent.eat();
+						})
+					}
+				}
+			})
+		</script>
+	</body>
+</html>

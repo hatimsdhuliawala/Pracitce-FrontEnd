@@ -1,0 +1,8 @@
+Selector1Selector2 -- the two selector has to be satisfied in same element
+
+Subject : UIClass May 15 Home Work 7 <name>
+
+1) differences between CSS2 and CSS3
+2) Responsive Web Design
+3) CSS3 Media Queries
+4) Bootstrap grid System?

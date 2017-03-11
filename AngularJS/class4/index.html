@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body ng-app="myApp">
+		<div ng-controller="FirstCtrl">
+			The first name is : <input ng-model="data.name">
+			{{obj|json}}
+		</div>
+		<div ng-controller="SecondCtrl">
+			The first name is : <input ng-model="data.name">
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		<script type="text/javascript">
+			angular.module('myApp', []);
+			angular.module('myApp').controller('FirstCtrl', ['$scope', 'fac1', function($scope, fac1){
+				$scope.data= fac1;
+				$scope.obj = {
+					name : 'javascript', 
+					age : 20
+				};
+			}])
+			angular.module('myApp').controller('SecondCtrl', ['$scope', 'fac1', function($scope, fac1){
+				$scope.data= fac1;
+			}])
+			angular.module('myApp').factory('fac1', function(){
+				return {
+					name : 'javascript', 
+					age : 20
+				};
+			})
+		</script>
+	</body>
+</html>

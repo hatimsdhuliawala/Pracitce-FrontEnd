@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<div ng-app="myApp">
+			Showing the model on the root scope : {{modelOnRoot}}<br/>
+			<div ng-controller="FirstCtrl" style="border:2px solid red;">
+				Showing the model on the root scope : {{modelOnRoot}}<br/>
+				Showing the model information : {{model1}}<br/>
+				To eat click on the button : <button ng-click="eat()">Click Me!!</button><br/>
+			</div>
+			<div ng-controller="SecondCtrl" style="border:2px solid blue;">
+				Showing the model on the root scope : {{modelOnRoot}}<br/>
+				Showing the model information : {{model1}}<br/>
+			</div>		
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		<script type="text/javascript">
+			angular.module('myApp', []);
+			angular.module('myApp').controller('FirstCtrl', function($scope, $rootScope){
+				// $scope is reference object to access model in a controller
+				$scope.model1 = 'Some info here';
+				$rootScope.modelOnRoot = 'this is a model on rootScope';
+				$scope.eat = function() {
+					alert(' FirstCtrl is eating')
+				}
+			})
+			angular.module('myApp').controller('SecondCtrl', function($scope){
+				// $scope is reference object to access model in a controller
+				$scope.model1 = 'Some info in SecondCtrl';
+			})
+		</script>
+	</body>
+</html>

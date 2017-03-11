@@ -1,0 +1,27 @@
+html {
+  padding: 0px; }
+
+p {
+  color: yellow; }
+
+div {
+  background-color: yellow; }
+
+div p {
+  border: 1px solid red; }
+
+#box1, div {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px; }
+
+#box2 {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,19 @@
+inline -- come in same line, do not respect width and height
+inline-block -- come in same line, respect the width and height
+block -- come in different line, respect the width and height
+
+
+homework
+
+Subject : UIClass May 15 Home Work 5 <name>
+
+1) CSS Specificity
+2) !important
+3) attribute based selctors, starts with, ends with contains, .....
+4) Selector1 Selctor2
+5) Selector1,Selector2
+6) Selector>Selector2
+7) SelectorSelector2
+8) Selector1+Selctor2
+9) Selector1~Selctor2
+10) Parent, child, Descendent, sibiling, adjacent sibiling, 

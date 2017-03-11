@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+
+		<script type="text/javascript">
+			function Person(name, age) {
+				this.name = name; // this is reference to current object
+				this.age = age;
+			};
+			var p1 = new Person('person 1', 43);
+			var p2 = new Person('person 2', 24);
+			console.log(p1);
+			console.log(p2);
+			Person.prototype.nationality = 'Global Citizen'; // same memory instance 
+			Person.prototype.getName = function(){ // function is a single instance
+				return this.name; // this will refer to calling object
+			}
+			// this property will be available to all the objects which are created from Person function.
+			// nationality in all objects will have same value.
+			var p3 = new Person('person 3', 3000);
+
+			var arr = [];
+			for(var i=0; i<100; i++) {
+				arr.push(new Person('person '+i, 3*i));
+			}
+		</script>
+	</body>
+</html>

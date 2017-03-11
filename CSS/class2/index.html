@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			#paraId {
+				color: red;
+			}
+			.class1 {
+				color: green;
+			}
+
+			[type*=te] {
+				background-color: yellow;
+			}
+
+			p , div {
+				border: 1px solid red;
+			}
+
+		</style>
+	</head>
+	<body>
+		<p>This is para 1</p>
+		<p id="paraId" class="class1 class2" style="color: blue;">This is para 2</p>
+		<p>This is para 3</p>
+		<p class="class2">This is para 4</p>
+		<div>This is div 1</div>
+		<div class="class1">This is div 2</div>
+		<div>This is div 3</div>
+		<div>This is div 4</div>
+		<span class="class1">This is span 1</span>
+		<span>This is span 2</span>
+		<span class="class2">This is span 3</span>
+		<span>This is span 4</span><br/>
+
+		This is input with no type : <input><br/>
+		This is input with type=text: <input type="text"><br/>
+		This is input with type=number : <input type="number"><br/>
+		This is input with type=date : <input type="date"><br/>
+	</body>
+</html>

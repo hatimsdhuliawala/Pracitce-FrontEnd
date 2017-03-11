@@ -1,0 +1,28 @@
+Closures -- within a function, you have access to its parent variables and function, you have access to any thing in global scope it would available. varaibles and functions you define as a part of function will not available outside.
+
+iife -- imediately invoked function execution
+		-- without invoking it will be executed the syntax of iife is 
+			(function(){
+				// have the logic here
+			})();
+		-- why to use an iife
+			-- they cant be called again
+			-- they create a name space-- 
+
+
+Hoisting -- all the declaration will be moved to the top.
+		-- intialization will not be moved to the top.
+
+
+var a=6;
+
+var a; // declaration
+a=6; // intialization
+
+homework 
+Subject : UIClass May 15 Home Work 21 <name>
+1) write a program expalining hositing
+2) write a program expalining closure
+3) write a program expalining event delegation
+4) jquery selectors?
+5) what is cdn?

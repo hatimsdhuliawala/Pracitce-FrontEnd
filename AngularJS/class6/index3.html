@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body ng-app="myApp">
+		<div ng-controller="FirstCtrl">
+			Enter model 1 : <input ng-model="model1"> <br/>
+			Enter model 2 : <input ng-model="model2"> <br/>
+			Enter model 3 : <input ng-model="model3"> <br/>
+
+			<dir1 flavor="model1"></dir1>
+			<dir1 flavor="model2"></dir1>
+			<dir1 flavor="model4"></dir1>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		<script type="text/javascript">
+			angular.module('myApp', []); 
+			angular.module('myApp').controller('FirstCtrl', ['$scope', function($scope){
+				
+			}]);
+			angular.module("myApp").directive('dir1', function() {
+				return {
+					restrict : 'EA', 
+					template : '<div>The flavor is : {{flavor}}</div>', 
+					scope : {
+						flavor : '='
+					}
+				}
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			.class1{
+				background-color: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<p>This is para 1</p>
+		<p>This is para 2</p>
+		<p>This is para 3</p>
+		<p>This is para 4</p>
+		<p>This is para 5</p>
+		<p>This is para 6</p>
+		<p>This is para 7</p>
+		<p>This is para 8</p>
+		<div>This is div 1</div>
+		<div>This is div 2</div>
+		<div>This is div 3</div>
+		<div>This is div 4</div>
+		<div>This is div 5</div>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.js"></script>
+		<script type="text/javascript">
+			/*$('p').bind('click', function(event){
+				console.log(event.target.innerHTML)
+			})*/
+			$('body').on('click', 'p', function(event){
+				console.log(event.target.innerHTML);
+			});
+		</script>
+	</body>
+</html>

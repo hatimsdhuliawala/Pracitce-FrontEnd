@@ -1,0 +1,21 @@
+globally downloading all the modules
+
+npm install -g grunt-cli bower yo generator-karma generator-angular
+
+make sure you are on an empty folder
+
+yo angular
+
+gulp instead of grunt --> N
+sass --> n
+bootstrap --> y
+
+which modules to select --> enter
+
+ovveride package.json --> y (enter)
+
+
+grunt build
+
+grunt serve
+

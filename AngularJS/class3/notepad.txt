@@ -1,0 +1,13 @@
+ng-repeat -- for every item in the array we repeat the dom element
+
+filters 
+
+when using a filter we use "|" pipe. it would not change the value in model. it will show in a different
+
+
+homework 
+Subject : UIClass May 15 Home Work 29 <name>
+
+1) Differences between a factory and a service?
+2) what is $http?
+3) write a program to use factory and service in angularJS?

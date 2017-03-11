@@ -1,0 +1,22 @@
+inline css -- style attribute
+internal css -- style element
+external css -- link element we provide css in sepearate .css file
+
+
+child 
+
+	selector1>selector2 --> selector2 will be seclected if its a child of selector1
+
+Descendent
+	selector1 selector2 --> selector2 has to be an element within (child, grand child, ....) of selector 1. 
+
+adajacent sibiling
+	selector1+selector2 --> 
+
+homework
+
+Subject : UIClass May 15 Home Work 6 <name>
+
+1) pusedo classes and psuedo elements? find differencences as well
+2) Selector1Selector2. Two selector with no space?
+3) look into all css selector : http://www.w3schools.com/cssref/css_selectors.asp

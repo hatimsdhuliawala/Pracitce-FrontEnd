@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+
+		<script type="text/javascript">
+			function outerFunction() {
+				var a=6;
+				function func1() {
+					console.log('func1 is executed')
+				}
+				function innerFunction() {
+					var b =40;
+					console.log(a);// any thing you define as a part of outer function will be available in the inner function
+					func1();
+				}
+				innerFunction();
+				console.log(b); // any thing you define as a part of inner function will not be available in the outer function
+			}
+			outerFunction();
+		</script>
+	</body>
+</html>

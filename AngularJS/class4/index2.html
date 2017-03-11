@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body ng-app="myApp">
+		<div ng-controller="FirstCtrl">
+			<div ng-repeat="item in arr track by $index">
+				<span ng-bind="item.id"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<span ng-bind="item.name"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<span ng-bind="item.age"></span>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		<script type="text/javascript">
+			angular.module('myApp', []);
+			angular.module('myApp').controller('FirstCtrl', ['$scope','$http', 'serv1', function($scope, $http, serv1){
+				console.log('hi')
+				console.log(serv1.multiply(2,3));
+				serv1.callAjax().then(function(data) {
+					$scope.data = data;
+					console.log('resolve method executedfrom the FirstCtrl');
+				}, function(err){
+					console.log('reject method executed')
+				})
+				console.log('how');
+			}]);
+			angular.module('myApp').service('serv1', ['$http', '$q', function($http, $q){
+				this.callAjax= function(){
+					var defer = $q.defer();
+					$http({
+						method: 'GET',
+						url : 'http://rest.learncode.academy/api/johnbob/friends'
+					}).success(function(data){
+						defer.resolve(data);
+					}).error(function(err){
+						defer.reject(err)
+					});
+					return defer.promise;
+				};
+				this.multiply = function(a,b) {
+					return a*b;
+				}
+			}])
+		</script>
+	</body>
+</html>

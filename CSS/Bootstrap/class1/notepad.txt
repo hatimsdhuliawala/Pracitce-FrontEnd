@@ -1,0 +1,28 @@
+bootstrap 
+
+cdn -- internet link. directly downloads from internet
+
+download and include
+
+Boostrap 
+
+we have grid system ?
+
+it is made of css3 media queries.
+
+using bootstrap grid system we can divide a page into rows and columns
+
+1 row = 12 columns
+
+
+
+homework
+
+Subject : UIClass May 15 Home Work 8 <name>
+
+1) what is screen media query?
+2) what is print media query? where would you use it?
+3) what are applictions of speech media query?
+4) what is screen reader ? why do we have to worry about it?
+5) what is bootstrap grid system?
+6) bootstrap buttons, bootstrap inputs, bootstrap ui componets?

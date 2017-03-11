@@ -1,0 +1,13 @@
+Selectors in java script to select html(dom node)
+
+
+document.getElementById('IdName'); -- one element
+document.getElementsByTagName('TagName');
+document.getElementsByClassName('className');
+document.querySelectorAll('cssSelectors');
+
+homework 
+
+Subject : UIClass May 15 Home Work 19 <name>
+
+1) explain with example (code and your explanation) about all events and event properties. 

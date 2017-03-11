@@ -1,0 +1,36 @@
+HTML 4 and HTML 5  differences
+
+semantic tags
+
+also look into all the HTML 5 features 
+
+javascript 
+
+
+CSS -- cascading style sheet
+
+style sheet -- 
+
+-- change color, change position
+
+inline style sheet -- style attribute
+
+<tagName style="/* css goes here*/"> content </tagName>
+
+the css we try to provide will applied in the content between these tags
+
+we have css properties 
+
+propName : propertyValue;
+propName2 : propertyValue2;
+
+
+homework
+
+Subject : UIClass May 15 Home Work 3 <name>
+
+1) Look into all css properties (http://www.w3schools.com/cssref/default.asp)
+2) CSS -- inline, internal and external css
+3) Why do we have to use css?
+4) what are the good practices in html and css
+5) html 4 and html 5 differences (sematic tags)

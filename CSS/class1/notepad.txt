@@ -1,0 +1,58 @@
+CSS -- Cascading style sheets
+
+Style sheets -- style and position of html elements
+
+
+css properties 
+
+csspropertyName : cssPropertyValue;
+
+cssproperty1 : value1;
+
+
+color: red;
+background-color: yellow;
+font-size : 16px;
+font-weight : normal;
+text-align : right;
+
+
+
+CSS 
+
+types of CSS
+
+Inline CSS 
+Internal CSS
+Extenral CSS
+
+
+Inline CSS 
+
+-- we use style attribute and as part of value, we try to provide all css propeties. 
+-- styles will applied to the content
+
+--- <TagName style="/* css goes here*/"> content </TagName>
+
+Selectors 
+
+id  -- in order to select one element in the entire page. We use ID           -- #IdName
+tagName -- in order to select elements with same tagName. we use tag selector -- tagName
+class -- elements with this specific class name. we use class selector        -- .className
+
+
+inline CSS
+
+
+<style>
+
+</style>
+
+homework
+
+Subject : UIClass May 15 Home Work 4 <name>
+
+1) Good One to use or good practice ? Inline, internal, external CSS
+2) differences between inline, inline-block and block elements? 
+3) CSS box model? Box sizing
+4) CSS specificity?

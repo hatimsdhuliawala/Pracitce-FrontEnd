@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<div style="border:2px solid red"  ng-app="myApp">
+			The first name outside controller : <input ng-model="firstName"> <br/>
+			The first name outside controller : <span ng-bind="firstName"></span> <br/>
+			The first name outside controller : <input ng-model="firstName">
+			The first name outside controller : {{firstName}}
+			<div ng-controller="FirstCtrl" style="border:2px solid blue;">
+				Showing first name in the controller : {{firstName}}<br/>
+				The last name is  FirstCtrl controller is : <input ng-model="lastName"><br/>
+				The last name is  FirstCtrl controller value :{{lastName}}
+			</div>
+			The last name is  FirstCtrl controller value :{{lastName}}
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		<script type="text/javascript">
+			angular.module('myApp',[]);
+			angular.module('myApp').controller('FirstCtrl', function($scope){
+
+			})
+		</script>
+	</body>
+</html>

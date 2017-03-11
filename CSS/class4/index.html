@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			p.class2 {
+				color: red;
+				background-color: yellow;
+			}
+			#demoId.class1 {
+				color: blue;
+				background-color: lightgreen;
+			} 
+
+			p.class2:hover {
+				background-color: lightblue;
+			}
+
+			p.class2:active{
+				background-color: black;
+				color: white;
+			}
+			p.class2::after {
+				content: ' :: Adding content befor paragraph';
+			}
+			div:empty {
+				width: 50px;
+				height: 50px;
+				background-color: red;
+				margin: 10px;
+			}
+			input:disabled {
+				background-color: yellow;
+			}
+			input:checked {
+				width: 50px;
+				height: 50px;
+			}
+			input:focus {
+				background-color: lightblue;
+			}
+			div:first-of-type{
+				border: 2px solid red;
+			}
+		</style>
+	</head>
+	<body>
+		<p>This is para 1</p>
+		<p id="demoId" class="class1">This is para 2</p>
+		<p>This is para 3</p>
+		<p class="class2">This is para 4</p>
+		<p>This is para 5</p>
+		<div>this is div 1</div>
+		<p class="class2" id="paraId">This is para 6</p>
+		<p>This is para 7</p>
+		<p>This is para 8</p>
+		
+		<div>this is div 2</div>
+		<form>
+			This is regular input with no type : <input name="NoType" size="3" value="fdghfjg"> <br>
+			This is input with type= text  : <input type="text" name="sometext" disabled> <br>
+			This is input with type= male : <input type="radio" name="gender"> <br>
+			This is input with type= female : <input type="radio" name="gender"> <br>
+			This is input with type= checkbox : <input type="checkbox" name="select"> <br>
+			This is input with type= date : <input type="date" name="todaysdate"> <br>
+			This is input with type= email : <input type="email" name="email"> <br>
+			This is input with type= submit : <input type="submit" > <br>
+			This is input with type=password : <input type="password" name="password" required > <br>
+			<select>
+		  		<option value="volvo">Volvo</option>
+				<option value="saab">Saab</option>
+				<option value="opel">Opel</option>
+				<option value="audi">Audi</option>
+			</select>
+			<datalist>
+				
+			</datalist>
+		</form>
+	</body>
+</html>

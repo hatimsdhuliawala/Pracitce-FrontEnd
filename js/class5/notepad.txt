@@ -1,0 +1,92 @@
+var arr = [];
+console.log(Array.isArray(arr));
+
+console.log(arr instanceof Array);
+
+var arr1 = ['some string', 1, true, {prop:'value'}, function(){console.log('some str')}, [], null, undefined]
+
+arr1
+["some string", 1, true, Object, arr1(), Array[0], null, undefined]
+
+arr1.length
+8
+
+arr1[0]
+"some string"
+
+arr1[1]
+1
+
+arr1[2]
+true
+
+arr1.indexOf(true); // 2
+
+
+arr.push(item); an item is added at the end of the array 
+arr.pop(); the last item in the array is removed
+
+arr.unshift(item); an item is added at the starting of the array
+arr.shift(item); an item is removed from the starting of the array
+
+
+arr.slice(firstIndex, lastIndex) 
+	-- create a new arr from an existing array
+	-- the existing array is not modified.
+	-- the new array values will be arr[firstindex], arr[firstindex+1], .... arr[lastIndex -1]
+
+
+example 
+arr2
+["hi", "how", "are", "you", "doing", "today"]
+
+arr2.slice(2,5) --> the values arr2[2], arr2[3], arr2[4]
+["are", "you", "doing"]
+
+
+arr.splice(firstIndex, numberOfItemsToBeRemoved)
+	-- create a new arra from existing array
+	-- the existing array is modified, (values would be removed)
+	-- the new array values will be arr[firstindex], arr[firstIndex+1] , 
+		..... arr[firstIndex + numberOfItemsToBeRemoved -1]
+
+example : 
+
+arr2 
+["hi", "how", "are", "you", "doing", "today"]
+
+arr2.splice(1,3)
+["how", "are", "you"]
+
+arr2
+["hi", "doing", "today"]
+
+
+arr.forEach(function(item, index, arr){}) 
+	-- for every item in the arr the function will be executed
+	-- item -- item 
+	-- index -- index
+	-- arr -- complete array reference
+
+arr.map(function(item, index, arr){
+	return //some info
+}) 
+	-- for every item in the arr the function will be executed
+	-- item -- item 
+	-- index -- index
+	-- arr -- complete array reference
+	-- this will create a new array out of returned values. 
+
+homework 
+
+Subject : UIClass May 15 Home Work 14 <name>
+
+1) array methods forEach, map, push, pop, slice, splice, reverse, unshift, shift ...
+2) please also look into :     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
+3) objects --> how to create an object using object literal.
+4) what are properties in objects
+5) how to add new properties in objects
+6) how to remove properties in objects
+7) how to access properties values in objects
+8) object methods, hasOwnProperty, all object methods
+9) what is for in loop in java script with respect to objects. 

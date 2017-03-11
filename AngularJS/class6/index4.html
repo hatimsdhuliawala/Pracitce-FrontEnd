@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body ng-app="myApp">
+		<div ng-controller="FirstCtrl">
+			Enter model 1 : <input ng-model="model1"> <br/>
+			<dir1 flavor="eat()"></dir1>
+			<dir1 flavor="sleep()"></dir1>
+			<dir1 flavor="run()"></dir1>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		<script type="text/javascript">
+			angular.module('myApp', []); 
+			angular.module('myApp').controller('FirstCtrl', ['$scope', function($scope){
+				$scope.eat = function() {
+					alert('im eating')
+				}
+				$scope.sleep = function() {
+					alert('im sleeping')
+				}
+				$scope.run = function() {
+					alert('im running')
+				}
+			}]);
+			angular.module("myApp").directive('dir1', function() {
+				return {
+					restrict : 'EA', 
+					template : '<div>click to run a task : <button ng-click="flavor()">Click Me!!</button></div>', 
+					scope : {
+						flavor : '&'
+					}
+				}
+			})
+		</script>
+	</body>
+</html>

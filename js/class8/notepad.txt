@@ -1,0 +1,8 @@
+The value of 'this' in a function will depend on which object you are calling function from?
+
+homework 
+
+Subject : UIClass May 15 Home Work 18 <name>
+
+1) what are call, apply, bind in java script?
+2) differences between call, apply bind in java script?

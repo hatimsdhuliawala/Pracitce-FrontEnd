@@ -1,0 +1,41 @@
+untill now we have used jQuery to make ajax call
+
+			$.ajax({
+				url : 'http://rest.learncode.academy/api/johnbob/friends/',
+				method: 'GET',
+				success: function(data){
+					console.log('ajax call successful', data);
+				},
+				error : function(xhr) {
+					console.log('ajax call failed', xhr);
+				}
+			})
+
+
+Now look int java script
+
+			var xhr = new XMLHttpRequest();
+			xhr.open('GET','http://rest.learncode.academy/api/johnbob/friends/', true); // configuring
+			xhr.send(); // making ajax call to sending the request
+
+
+			xhr.onreadystatechange = function(){
+				// status 200 --- success ful
+				if (xhr.readyState == 4 && xhr.status == 200) {
+		            console.log('ajax call successful', xhr.responseText);
+		        } 
+		        if(xhr.readyState == 4 && xhr.status == 404) {
+		        	console.log('ajax call failed', xhr.responseText);
+		        }
+			}
+
+
+
+homework 
+Subject : UIClass May 15 Home Work 26 <name>
+
+1) Look into all the http status codes : 200, 201, 400, 401, 403, 404, 501, 502, 503, 504
+2) when which of the above status codes you will get from server in ajax calls?
+3) jquery plugins?
+4) animations in jquery?
+5) data grid in jquery?

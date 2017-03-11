@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+
+		<script type="text/javascript">
+		"use strict"
+			var obj = {}; 
+			console.log(typeof obj);
+			if({}){
+				console.log('object is truthy value')
+			}
+			var obj2 = {
+				prop1 : 32, 
+				prop2 : undefined,
+				prop3 : [],
+				prop4 : true, 
+				prop5 : 'some str', 
+				prop6 : {}, 
+				prop7 : function() {console.log('some function')},
+				prop8 : null,
+				address : {
+					street : '255 harrison ave',
+					zip : '07304'
+				}
+			};
+			console.log(obj2.prop1); 
+			console.log(obj2['prop1']); 
+			obj2.prop1 = 50;
+			for(var p in obj2) {
+				console.log('the property Name is : '+ p +  ". The property Value is : ", obj2[p]);
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+
+		<script type="text/javascript">
+			var obj = {
+				name : 'some name', 
+				age : 40
+			}
+			function func1(a,b) {
+				console.log(this);
+				console.log(a*b);
+			}
+			func1(2,3); // this --> window , 6
+			// if you want to change the value of 'this' keyword in calling function
+			func1.call(obj, 2,3); // this --> obj
+			func1.apply(obj, [2,3]); // this --> obj
+			var newFunc = func1.bind(obj); 
+			// bind create a new function out of existing function
+			// in the newly created function 'this', will refer to the obj you passed in bind(obj)
+			// old function (func1)  new function (newFunc)--> 'this' <-- obj 
+			// newFunc -- > will be a new function of func1 --> 
+			// within newFunc this value will always be ---> obj
+			newFunc(3,4);
+		</script>
+	</body>
+</html>

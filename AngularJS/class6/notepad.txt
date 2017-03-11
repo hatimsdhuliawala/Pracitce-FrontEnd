@@ -1,0 +1,40 @@
+If i have a model within a template
+
+if you are using shared scope
+
+if i change model is one directive instance it changes all the directives model.
+
+
+default would be shared scope 
+
+if you want to make the directive instance model independent the use isolate scope 
+
+
+scope : {}
+
+
+@ = &
+
+When in isolate scope if you want receive information through the attribute of the directive you 
+
+
+@ --> reading information from the attribute
+
+= --> reading the model from the attribute and putting in the template
+
+& --> reading the reference of a function from the parent scope
+
+link -- 
+
+	scope -- access to scope
+	element -- dom manuplation or event handler operation can be done using element
+	attrs -- reading info in attributes
+
+homework 
+Subject : UIClass May 15 Home Work 32 <name>
+
+1) single page applications? 
+2) ngRoute?
+3) $routeProvider?
+4) ng-view?
+5) how to implement single page applications using ngRoute

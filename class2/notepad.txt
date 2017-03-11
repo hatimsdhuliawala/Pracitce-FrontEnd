@@ -1,0 +1,73 @@
+element -- <tagName> content </tagName>
+
+<parentTag>
+	<childTag> content </childTag>
+	<childTag> content </childTag>
+	<childTag> content </childTag>
+</parentTag>
+
+
+<HTML>
+	<head>
+		<!-- configuration -->
+		<title>Class2 HTML</title>
+	</head>
+	<body>
+		<!-- see on the page --> 
+	</body>
+</HTML>
+
+
+explicitly we are trying to say to the browser this is html 5 
+
+html versions
+
+html 4 
+
+html 5 
+
+
+xhtml 
+<html>
+</html>
+
+<br />
+
+
+attributes 
+
+
+element -- <tagName attributeName="attributeValue"> content </tagName>
+
+input tag -- can be used to collect information from the user
+
+number, email, text, password
+
+
+inline element -- input 
+
+p -- paragraph 
+
+div -- group some information
+
+span -- select a part of a line we generally use a span
+
+lists 
+
+	ordered list -- ol
+	unorderd list -- ul
+
+	every list item -- li
+
+
+homework
+
+Subject : UIClass May 15 Home Work 1 <name>
+
+1) how to use a table element
+2) look into all inout attributes 
+3) try to prepare your resume in html page (heading tag, div and lists)
+	professional summary -- list item
+	educational details -- table
+	heading tags (h1-h6)
+	

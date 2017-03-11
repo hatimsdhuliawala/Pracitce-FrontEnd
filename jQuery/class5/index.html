@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<div id="divId"></div>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.js"></script>
+		<script type="text/javascript">
+			$.ajax({
+				url : 'http://rest.learncode.academy/api/johnbob/friends/',
+				method: 'GET',
+				success: function(data){
+					document.getElementById('divId').innerHTML = 'Name : '+ data[7].name+ '<br/> drink : '+ data[7].drink;
+					console.log('ajax call successful', data);
+				},
+				error : function(xhr) {
+					console.log('ajax call failed', xhr);
+				}
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+==  --- compare values
+
+===  -- compare value and data type
+
+
+truthy -- any variable which can be converted to true
+falsy values -- any variable which can be converted to false
+
+0
+false
+''
+null
+undefined
+NaN
+
+truthy -->
+
+true
+"0"
+{}
+[]
+
+
+
+
+
+homework 
+
+Subject : UIClass May 15 Home Work 13 <name>
+
+1) Infinity 
+2) logical and && , logical or || --> https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators
+3) thruthy and falsy values in javascript
+4) operators in java script --> https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators
+5) operational precedences --> https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence

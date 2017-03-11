@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<div ng-app="myApp">
+			Showing the model on the root scope : {{modelOnRoot}}<br/>
+			<div ng-controller="FirstCtrl" style="border:2px solid red;">
+				Showing the model information : {{model1}}<br/>
+				Showing the direct string : {{model2+ " World"}}
+			</div>
+			<div ng-controller="SecondCtrl" style="border:2px solid blue;">
+				Showing the model information : {{model1}}<br/>
+				<div ng-controller="ThirdCtrl" style="border:2px solid blue;">
+					Showing the model information : {{model1}}<br/>
+				</div>	
+			</div>		
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		<script type="text/javascript">
+			angular.module('myApp', []);
+			angular.module('myApp').controller('FirstCtrl', function($scope, $rootScope){
+				// $scope is reference object to access model in a controller
+				$scope.model1 = 'Some info here';
+				$rootScope.model1 = 'this is model in rootScope';
+				$scope.model2 = "Hello";
+			})
+			angular.module('myApp').controller('SecondCtrl', function($scope){
+				// $scope is reference object to access model in a controller
+				//$scope.model1 = 'Some info in SecondCtrl';
+			})
+			angular.module('myApp').controller('ThirdCtrl', function($scope){
+				//$scope.model1 = 'Some info in ThirdCtrl';
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+factory -- 
+	-- return key word is used
+	-- it can return any java script data type
+	-- singleton
+
+
+Service --
+	-- This only provides us with object
+	-- instantiated
+	-- one single object is created and made available
+	-- singleton
+
+$q 
+	-- promise.then(resolve function, reject function);
+	-- resolve and reject method. if you call both, only the first called onces will be executed
+	-- resolve and reject are asynchnronous -- they will wait for current script to be executed and later either the resolve function or the reject function will be executed.
+
+homework 
+Subject : UIClass May 15 Home Work 30 <name>
+
+1) directive
+2) restirctions -- element, attribute, class, comment
+3) template and template url 
+4) link 
+5) compile
+6) shared scope and isolte scope
+7) @ = & in isolate scope
+8) transulde? 
+
+write programs to look into these scenario before you come to next class. 

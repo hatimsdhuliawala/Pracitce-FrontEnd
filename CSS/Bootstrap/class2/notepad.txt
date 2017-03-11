@@ -1,0 +1,29 @@
+bootstrap
+
+RWD -- responsive web design 
+
+In different screen sizes we. we can the same page with different style
+
+grid system
+
+rows and columns
+
+1 row = 12 columns at any point
+
+you can say a div (element) can occupy 1 column t0 12 columns
+
+types of screen
+
+lg 
+md
+sm
+xs
+
+
+
+homework
+
+Subject : UIClass May 15 Home Work 9 <name>
+
+1) Boot strap glypicons, input, input sizing, 
+2) http://www.w3schools.com/bootstrap

@@ -1,0 +1,31 @@
+event propagation
+
+Suppose of you have parent and child elements. 
+
+Suppose if you have event listner on both parent and child of same event type. 
+
+--> and You made an event on child element
+
+event bubling-- In the case of event bubling -- it starts with child event listener being invoked first and then the parent event handler invoked next
+
+event capturing -- -- it starts with parent event listener being invoked first and then the child event handler invoked next
+
+How to configure event bubling on capturing-- On the parent event listener using capture flag you can configure'
+
+captureFlag -- false, undefined -- bubling
+captureFlag -- true -- event capturing 
+
+parentDomNode.addEventListener('eventType', eventHandlerFunction, captureFlag)
+
+In older browser -- we dont have evenyt capturing 
+-- in modern browsers -- event captuing in included.
+
+homework 
+
+Subject : UIClass May 15 Home Work 20 <name>
+1) event bubling and capturing differencess with code examples?
+2) event.stopPropagation() and event.stopImmediatePropagation() differences with example and explanation?
+3) event delegation with example
+4) what is jquery and why do you need use it?
+5) what are use cases for event bubling and capturing?
+

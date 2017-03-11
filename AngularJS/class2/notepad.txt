@@ -1,0 +1,24 @@
+$scope is reference object in order to access the model in  controller
+
+$rootscope --> any model defined outside the controllers. 
+				This would available through out the entire angular application
+
+what if you have to define a model outside of a controller --> $rootScope
+
+defining actions can also be on a controller?
+
+We can define methods on $scope.eat = function() {alert('eating food!!')};
+
+this methods can be invoked from ng-click="methodName()"
+
+
+
+Model is looked on current scope then if not found its parent scope, if not found rootscope if not found empty.
+
+homework 
+Subject : UIClass May 15 Home Work 28 <name>
+
+1) Look into what is ng-repeat and ng-options
+2) track by $index in ng-repeat
+3) filter and how to write a custom filter 
+4) Write a program to understand all the filters filter, currency, number, date, json, lowercase, uppercase, limitTo, orderBy

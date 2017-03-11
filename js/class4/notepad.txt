@@ -1,0 +1,56 @@
+
+== 
+===
+
+while(condition) {
+	//stmts
+}
+
+untill the condition is true the stmts keep on executed 
+if the contion fails then it will stop executing stmts
+
+var i = 0;
+while(i<10) {
+	console.log(i);
+	i++;
+}
+
+do{
+	stmts;
+}while(condition)
+
+diff between do while loop and while loop
+
+--> the first it executes the statments and then it starts checking for condition from second time
+
+var i =0; 
+do{
+	console.log(i);
+	i++;
+}while(i<10);
+
+for (initialization (1); condition (2)(5)..; increment (4)(7)) {
+	stmts(3)(6);
+}
+
+function func1() {
+	console.log('function executed');
+}
+
+
+function overloading 
+
+func1(2,3);
+
+homework 
+
+Subject : UIClass May 15 Home Work 13 <name>
+
+1) pass by value and pass by reference in javascript with data types?
+2) arrays
+3) array methods indexOf, lastIndexOf, slice, splice, forEach, map, .length
+4) example usages of arrays.
+5) functions and calling functions in java scripts
+6) oops concepts in javascript
+7) arguments
+

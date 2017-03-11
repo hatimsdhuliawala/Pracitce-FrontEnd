@@ -1,0 +1,30 @@
+Directives
+
+Inbuilt -- these are provided by angular
+	ng-app, ng-model, ng-bind, ng-repeat, ng-init, ng-options, ..... 
+
+Custom directives -- user defined directives
+
+angular.module('myApp').directive('directivename', function() {
+	
+	return {
+
+	};
+})
+
+In the returning object we provide customization
+
+templateUrl : can only be used when code is deployed on a server it will work 
+
+it will not work on file system
+
+
+homework 
+Subject : UIClass May 15 Home Work 31 <name>
+
+1 link 
+2) compile
+3) shared scope and isolte scope
+4) @ = & in isolate scope
+
+Please write an example to demonstrate above concepts and explain in best possible language with your own words?
